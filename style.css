@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu {
+    width: 80%;
+    text-align: right;
+}
+
+.menu a {
+    color: #124265;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.menu a:hover {
+    color: #007bff;
+}
+
+.menu .btn-menu {
+    background-color: #007bff;
+    display: inline-block;
+    padding: 8px 16px;
+    color: #fff;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.menu .btn-menu:hover {
+    background-color: #124265;
+    color: #fff;
+}
+
+section.main {
+    background-image: url('./assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0;
+}
+
+.main-cta {
+    width: 100%;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.main-cta h2 {
+    color: #16507b;
+    font-size: 40px;
+}
+
+.main-cta p {
+    color: gray;
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.main-cta button {
+    background-color: #007bff;
+    display: inline-block;
+    padding: 8px 30px;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.diferenciais {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diferencial-single {
+    width: 23%;
+    background-color: #fff;
+    margin-right: 2%;
+    padding: 50px 20px;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+.diferencial-single:hover {
+    transform: scale(1.06);
+}
+
+.diferencial-single i {
+    color: #124265;
+    font-size: 23px;
+}
+
+.diferencial-single h2 {
+    color: #124265;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.diferencial-single p {
+    color: gray;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+section.sobre {
+    padding: 80px 0;
+}
+
+.chamada-sobre {
+    width: 100%;
+    text-align: center;
+}
+
+.chamada-sobre h2 {
+    color: #124265;
+    text-transform: uppercase;
+}
+
+.chamada-sobre p {
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+}
+
+.conteudo-sobre {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo-sobre p {
+    width: 48%;
+    margin-right: 2%;
+    color: #444444;
+}
+
+.conteudo-sobre span {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.conteudo-sobre i {
+    color: #007bff;
+    margin: 0 5px;
+}
+
+section.conquistas {
+    background-color: #f8fbfe;
+    padding: 20px 0;
+}
+
+.conquista-single {
+    width: 22%;
+    margin-right: 3%;
+    text-align: center;
+    color: #124265;
+}
+
+.conquista-single img {
+    max-width: 100%;
+    filter: grayscale(100%);
+    transition: .6s ease;
+}
+
+.conquista-single img:hover {
+    filter: grayscale(0);
+    transform: scale(1.07);
+}
+
+.conquista-single h2 {
+    font-size: 30px;
+}
+
+.menu-itens {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #124265;
+    background-color: #fff;
+    display: block;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.menu-itens.show {
+    opacity: 1;
+}
+
+.menu-itens.hide {
+    opacity: 0;
+}
+
+.menu-itens a {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+}
+
+section.sobre-empreendedor {
+    padding: 40px 0;
+}
+
+.sobre-empreendedor-img img {
+    max-width: 100%;
+}
+
+.sobre-empreendedor-img {
+    width: 50%;
+}
+
+.sobre-empreendedor-content {
+    width: 50%;
+    padding: 0 50px;
+}
+
+.sobre-empreendedor-content h2 {
+    color: #124265;
+    margin-top: 100px;
+
+}
+
+.sobre-empreendedor-content p {
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+section.depoimentos .depoimentos-chamada {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.depoimentos-chamada h2 {
+    color: #124265;
+    text-transform: uppercase;
+}
+
+.depoimentos-chamada p {
+    color: #ccc;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.carrousel {
+    display: flex;
+}
+
+.carrousel-single {
+    width: 31%;
+    margin-right: 2%;
+    text-align: center;
+}
+
+.carrousel-single-box {
+    padding: 20px;
+    background-color: #f3f9fd;
+    border-radius: 10px;
+}
+
+.carrousel-single-box p {
+    font-style: italic;
+    color: #4b4b4b;
+    font-size: 14px;
+}
+
+.carrousel-single-box i {
+    font-size: 19px;
+    color: #c9e3f5;
+    padding: 0 8px;
+}
+
+.carrousel-single img {
+    max-width: 100%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.carrousel-single span {
+    color: #ccc;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 768px) {
+    .diferencial-single {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .conteudo-sobre p{
+        width: 100%;
+        margin: 20px;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+        text-align: right;
+        width: 80%;
+    }
+
+    .menu-mobile i {
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .sobre-empreendedor .center {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .center .sobre-empreendedor-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .center .sobre-empreendedor-content {
+        width: 100%;
+        margin-top: -25%;
+    }
+
+    .carrousel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carrousel .carrousel-single {
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
+}
